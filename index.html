@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Informacji Medycznej Eugenics - Logowanie</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <img src="../assets/images/logo.png" alt="Logo" class="logo">
+            <h1>System Informacji Medycznej Eugenics</h1>
+        </div>
+        <div class="login-form">
+            <form id="login-form" action="/login" method="post">
+                <div class="form-group">
+                    <label for="username">Nazwa użytkownika:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="login-button">Zaloguj się</button>
+                </div>
+                <div id="login-success-message" style="display: none; color: green;">
+                    Logowanie udane! Przekierowanie...
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Skrypt logowania -->
+    <script src="../utils/login.js"></script>
+</body>
+</html>
