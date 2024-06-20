@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna - System informacji medycznej Eugenics</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>System informacji medycznej Eugenics</h1>
+    </header>
+
+    <div class="date-time-bar">
+        <p id="current-date-time"></p>
+        <p id="user-info">Zalogowany jako: <span id="position"></span> <span id="username"></span></p>
+    </div>
+
+    <main>
+        <div class="tiles-container">
+            <div class="tile" id="calendar">
+                <img src="../assets/images/calendar.png" alt="Kalendarz wizyt">
+                <p>Kalendarz wizyt</p>
+            </div>
+            <div class="tile" id="records">
+                <img src="../assets/images/records.png" alt="Kartoteki pacjentów">
+                <p>Kartoteki pacjentów</p>
+            </div>
+            <div class="tile" id="generators">
+                <img src="../assets/images/generators.png" alt="Generatory">
+                <p>Generatory</p>
+            </div>
+            <div class="tile" id="profile">
+                <img src="../assets/images/profile.png" alt="Profil">
+                <p>Profil</p>
+            </div>
+            <div class="tile" id="insurances">
+                <img src="../assets/images/insurance.png" alt="Ubezpieczenia">
+                <p>Ubezpieczenia</p>
+            </div>
+            <div class="tile" id="logout" onclick="confirmLogout()">
+                <img src="../assets/images/logout.png" alt="Wyloguj">
+                <p>Wyloguj</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Eugenics Medical Center</p>
+    </footer>
+
+    <script src="../utils/data-time.js"></script>
+</body>
+</html>
